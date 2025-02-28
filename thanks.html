@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>思念与感恩</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: '宋体', sans-serif;
+      background-color: #faf0e6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* 导航栏样式 */
+    nav {
+      background-color: rgba(135, 206, 250, 0.5);
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    /* 主体内容样式 */
+    main {
+      text-align: center;
+      padding: 50px;
+    }
+
+    /* 核心文字样式 */
+    #main-text {
+      font-family: '手写体', sans-serif;
+      font-size: 36px;
+      color: #8b4513;
+      margin-bottom: 20px;
+    }
+
+    /* 说明文字样式 */
+    #sub-text {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* 底部样式 */
+    footer {
+      text-align: right;
+      padding: 10px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav>
+    <a href="#"><img src="house-icon.svg" alt="首页" style="width: 20px; height: 20px;">首页</a>
+  </nav>
+  <!-- 主体内容 -->
+  <main>
+    <div id="main-text">离开家，在CUC努力学习，我很想念妈妈</div>
+    <div id="sub-text">亲爱的爸爸妈妈，感谢你们多年来的养育之恩……（此处可替换为您自己的感谢话语）</div>
+  </main>
+  <!-- 底部 -->
+  <footer>
+    &copy; 2025 版权所有
+  </footer>
+  <script>
+    // 页面加载动画效果
+    window.onload = function () {
+      const mainText = document.getElementById('main-text');
+      const subText = document.getElementById('sub-text');
+
+      mainText.style.opacity = 0;
+      subText.style.opacity = 0;
+
+      setTimeout(() => {
+        mainText.style.opacity = 1;
+        mainText.style.animation = 'fadeIn 1s ease-in-out';
+      }, 200);
+
+      setTimeout(() => {
+        subText.style.opacity = 1;
+        subText.style.animation = 'fadeIn 1s ease-in-out';
+      }, 500);
+    };
+  </script>
+  <audio src="annie's_wonderland.mp3" autoplay loop volume="0.3"></audio>
+</body>
+
+</html>
